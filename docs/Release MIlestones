@@ -1,0 +1,58 @@
+Milestone #1 – Target Date: Jan 29, 2021
+Features:
+1.	VM/Container Scheduling
+    a.	API interface
+    b.	Single/ReplicaSet (No Mix VM and Container in single request)
+2.	Cluster on-boarding and management (to Global scheduler platform)
+    a.	Cluster Register API (kubectl add cluster…)
+    b.	Collect resources from the cluster (Pull for this release)
+    c.	Support OpenStack cluster
+3.	Deliver Global platform API Server (component) - optimized from Arktos API server, lightweight version
+    a.	Support Global API interfaces
+    b.	API Server HA
+    c.	Storage/Etcd HA
+4.	Deliver Scheduler (Component) -  scalable with profile based partitioning
+    a.	Support static partitioning of schedulers 
+    b.	Support OpenStack - Use existing API to schedule VMs
+5.	Implement Scheduling Algorithm v1.0 – First version of the algorithm based on ranking and filtering
+    a.	Support resource utilization based scheduling policy – (define our own)
+    b.	Support location based scheduling policy
+6.	Deliver Resource Collection Controller (Component) – 
+    a.	Define resource API interfaces
+    b.	Implement resource API for Openstack
+    c.	Support Pull model
+
+Milestone #2 - Target Date: April 2, 2021
+Features:
+1.	VM/Container Scheduling
+    a.	Batch API (Support multiple VMs in atomic way)
+    b.	Group API (Multiple VMs with no relationship)
+    c.	Mix API (One request include both VMs and Containers)
+2.	Cluster on-boarding and management (to Global scheduler platform)
+    a.	Support Kubernetes cluster
+    b.	Support Arktos cluster
+3.	Deliver Global platform API Server (component) 
+    a.	Support Batch and Mix APIs
+    b.	Scale API Server - Partitioning
+    c.	Scale Storage/Etcd – Partitioning 
+4.	Deliver Scheduler (Component) -  scalable with profile based partitioning
+    a.	Dynamic and load based partitioning of schedulers
+    b.	Support Kubernetes/Arktos clusters
+5.	Implement Scheduling Algorithm v2.0 – 
+    a.	Support cost based scheduling policies
+    b.	Support Power Consumption scheduling policies 
+6.	Deliver Resource Collection Controller (Component) – 
+    a.	Define resource API interfaces
+    b.	Implement resource API for Kubernetes/Arktos
+    c.	Support push model
+
+Milestone #3 - Target Date: July 2, 2021
+Features:
+1.	VM/Container Scheduling
+    a.	Additional API supports (TBD)
+2.	Rescheduling Controller (Component) 
+    a.	Monitor VM/Container traffic
+    b.	Migrate VM/Container based on traffic flow/load
+3.	Implement Scheduling Algorithm v2.0 – 
+    a.	Support dynamic scheduling policy plug-in.
+    4.	Research on distributed scheduling – (without collecting data or one level)
